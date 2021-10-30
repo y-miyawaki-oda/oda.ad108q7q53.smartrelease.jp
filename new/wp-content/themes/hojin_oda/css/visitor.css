@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* sec_ttl
+--------------------------------*/
+.sec_ttl{
+	background-image: url(../img/visitor/ttl_bg_pc.jpg);
+}
+@media screen and (max-width: 767px) {
+	.sec_ttl{
+		background-image: url(../img/visitor/ttl_bg_sp.jpg);
+	}
+}
+
+/* visitor
+--------------------------------*/
+.sec_visitor{
+	position: relative;
+}
+.sec_visitor .txt {
+    letter-spacing: 0.1em;
+}
+.sec_visitor .grid4{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.sec_visitor .grid4 > *{
+	width: calc(94% / 4);
+	margin-right: 2%;
+}
+.sec_visitor .grid4 > *:nth-child(4n){
+	margin-right: 0;
+}
+.sec_visitor .grid4 > *:nth-child(n+5){
+	margin-top: 2%;
+}
+.sec_visitor .list{
+	margin-top: 45px;
+}
+.sec_visitor .list li .img{
+	text-align: center;
+}
+.sec_visitor .list li .img{
+	position: relative;
+}
+.sec_visitor .list li .img img {
+	width: 100%;
+}
+.sec_visitor .list li .img img:not(.size){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	font-family: 'object-fit: cover; object-position: center;'
+}
+.sec_visitor .list li a{
+	display: block;
+	position: relative;
+	border: 1px solid #dcd7ba;
+	border-radius: 5px;
+    overflow: hidden;
+	background: #fff;
+	height: 100%;
+}
+.sec_visitor .list li a::after {
+    content: "";
+    position: absolute;
+	bottom: 0;
+	right: 0;
+	border-style: solid;
+	border-width: 0 0 14px 16px;
+	border-color: transparent transparent #ffe12b transparent;
+    z-index: 1;
+
+}
+.sec_visitor .list li .txt {
+    font-size: 1.8rem;
+    line-height: 1.44;
+    font-weight: 500;
+	min-height: 86px;
+    padding: 18px 11.4%;
+    word-break: break-all;
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+	.sec_visitor .grid4 > *{
+		width: 32%;
+		margin-right: 2%;
+	}
+	.sec_visitor .grid4 > *:nth-child(3n){
+		margin-right: 0;
+	}
+	.sec_visitor .grid4 > *:nth-child(4n){
+		margin-right: 2%;
+	}
+	.sec_visitor .grid4 > *:nth-child(n+4){
+		margin-top: 3.2%;
+	}
+	.sec_visitor .list li img{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.sec_visitor .txt {
+	    font-size: 3.7vw;
+	    letter-spacing: 0.1em;
+	    line-height: 1.57;
+	}
+	.sec_visitor .list{
+		margin-top: 0;
+		padding-top: 10vw;
+		position: relative;
+	}
+	.sec_visitor .list li .txt{
+		font-size: 3.7vw;
+		letter-spacing: 0.1em;
+		line-height: 1.23;
+		padding: 14% 16%;
+		min-height: inherit;
+	}
+	.sec_visitor .list li a::after {
+		border-width: 0 0 3.2vw 3.7vw;
+	}
+	.sec_visitor .grid4 > *{
+		width: 48.7%;
+    	margin-right: 2.6%;
+	}
+	.sec_visitor .grid4 > *:nth-child(2n){
+		margin-right: 0;
+	}
+	.sec_visitor .grid4 > *:nth-child(n+3){
+		margin-top: 3.1%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

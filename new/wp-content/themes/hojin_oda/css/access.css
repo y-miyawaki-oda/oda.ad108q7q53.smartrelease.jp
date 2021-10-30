@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* sec_ttl
+--------------------------------*/
+.sec_ttl{
+	background-image: url(../img/access/ttl_bg_pc.jpg);
+}
+@media screen and (max-width: 767px) {
+	.sec_ttl{
+		background-image: url(../img/access/ttl_bg_sp.jpg);
+	}
+}
+
+/* intro
+--------------------------------*/
+.sec_intro .txt{
+	font-size: 1.6rem;
+	line-height: 1.625;
+}
+@media screen and (max-width: 767px) {
+	.sec_intro .txt{
+		font-size: 3.7vw;
+		letter-spacing: 0.1em;
+		line-height: 1.57;
+	}
+}
+
+/* map
+--------------------------------*/
+.sec_map .map+.map{
+	margin-top: 35px;
+}
+.sec_map .txt{
+	font-size: 1.4rem;
+	margin-top: 5px;
+}
+@media screen and (max-width: 767px) {
+	.sec_map .map+.map{
+		margin-top: 5%;
+	}
+	.sec_map .txt{
+		font-size: 3.7vw;
+		letter-spacing: 0.1em;
+		margin-top: 1%;
+	}
+	.sec_map .iframe iframe{
+		height: 102vw;
+	}
+}

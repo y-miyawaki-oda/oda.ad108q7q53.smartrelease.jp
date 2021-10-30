@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* sec_ttl
+--------------------------------*/
+.sec_ttl{
+	background-image: url(../img/seminar/ttl_bg.jpg);
+}
+
+/* detail
+--------------------------------*/
+.sec_detail .head{
+	margin-bottom: 40px;
+}
+.sec_detail .head .info{
+	display: flex;
+	justify-content: flex-start;
+}
+.sec_detail .head .info .date{
+	font-size: 1.4rem;
+	color: #717171;
+	font-weight: 300;
+	border: 2px solid #eaeaea;
+	border-right: 0;
+	line-height: 26px;
+	height: 30px;
+	padding: 0 0.5em;
+	font-style: italic;
+}
+.sec_detail .head .info .tag{
+	font-size: 1.3rem;
+	line-height: 27px;
+	background: #fee12b;
+	border: 2px solid #fee12b;
+	height: 30px;
+	padding: 0 0.5em;
+}
+.sec_detail .head .ttl{
+	font-size: 3.8rem;
+	line-height: 1.447;
+	font-weight: 700;
+}
+.sec_detail .head .ttl span{
+	display: inline-block;
+	position: relative;
+	padding-left: 20px;
+}
+.sec_detail .head .ttl span::before{
+	content: '';
+	position: absolute;
+	top: calc(50% + 0.08em);
+	left: 0;
+	transform: translateY(-50%);
+	background: #ffe12b;
+	width: 6px;
+	height: calc(100% - 0.4em);
+}
+.sec_detail .head .sns{
+	margin-top: 15px;
+	display: flex;
+	justify-content: flex-start;
+}
+.sec_detail .head .sns li{
+	width: 30px;
+}
+.sec_detail .head .sns li+li{
+	margin-left: 10px;
+}
+.sec_detail .cnt{
+	margin-top: 10px;
+}
+.sec_detail .cnt .alignright{
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+.sec_detail .cnt p{
+	font-size: 1.8rem;
+	line-height: 1.78;
+}
+.sec_detail .cnt h2{
+	font-size: 2.6rem;
+	line-height: 1.346;
+	font-weight: 700;
+	margin-top: 60px;
+	position: relative;
+	padding-left: 15px;
+	margin-bottom: 20px;
+}
+.sec_detail .cnt h2::before{
+	content: '';
+	position: absolute;
+	top: calc(50% + 0.08em);
+	left: 0;
+	transform: translateY(-50%);
+	background: #ffe12b;
+	width: 4px;
+	height: calc(100% - 0.4em);
+}
+.sec_detail .cnt .name{
+	font-size: 2rem;
+	font-weight: 700;
+}
+.sec_detail .cnt .list li{
+	padding-left: 1em;
+	text-indent: -1em;
+}
+.sec_detail .cnt .list li::before{
+	content: '・';
+}
+.sec_detail .cnt .btn{
+	text-align: center;
+	margin-top: 40px;
+}
+.sec_detail .cnt .btn .btn_yellow{
+	width: 450px;
+}
+@media screen and (max-width: 767px) {
+	.sec_detail .head{
+		margin-bottom: 0;
+	}
+	.sec_detail .head .info .date{
+		font-size: 3.2vw;
+		border-width: 1px;
+		border-right: 0;
+		line-height: 5vw;
+		height: 5.3vw;
+		padding: 0 0.5em;
+	}
+	.sec_detail .head .info .tag{
+		font-size: 2.8vw;
+		line-height: 5vw;
+		border-width: 1px;
+		height: 5.3vw;
+		padding: 0 0.5em;
+	}
+	.sec_detail .head .ttl{
+		font-size: 6.1vw;
+		margin-top: 3%;
+	}
+	.sec_detail .head .ttl span{
+		padding-left: 20px;
+	}
+	.sec_detail .head .ttl span::before{
+		width: 4px;
+	}
+	.sec_detail .head .sns{
+		margin-top: 5%;
+		justify-content: flex-start;
+	}
+	.sec_detail .head .sns li{
+		width: 10.67vw;
+	}
+	.sec_detail .head .sns li+li{
+		margin-left: 2vw;
+	}
+	.sec_detail .cnt{
+		margin-top: 10px;
+	}
+	.sec_detail .cnt .alignright{
+		margin: 0 auto 10px;
+		float: none;
+		display: block;
+		width: auto;
+		max-width: 100%;
+	}
+	.sec_detail .cnt p{
+		font-size: 3.7vw;
+		line-height: 1.6;
+	}
+	.sec_detail .cnt h2{
+		font-size: 4.8vw;
+		line-height: 1.38;
+		margin-top: 9%;
+		padding-left: 15px;
+		margin-bottom: 3%;
+	}
+	.sec_detail .cnt h2::before{
+		width: 3px;
+	}
+	.sec_detail .cnt .name{
+		font-size: 4vw;
+	}
+}

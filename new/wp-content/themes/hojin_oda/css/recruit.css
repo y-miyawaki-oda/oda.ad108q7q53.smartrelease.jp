@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* sec_ttl
+--------------------------------*/
+.sec_ttl{
+	background-image: url(../img/recruit/ttl_bg_pc.jpg);
+}
+@media screen and (max-width: 767px) {
+	.sec_ttl{
+		background-image: url(../img/recruit/ttl_bg_sp.jpg);
+	}
+}
+
+/* recruit
+--------------------------------*/
+.sec_recruit .list{
+	margin: 70px auto 0;
+	max-width: 830px;
+}
+.sec_recruit .list .btn{
+	font-size: 1.7rem;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	border: 1px solid #e9e9e9;
+	border-radius: 5px;
+	padding: 21px 15px;
+	position: relative;
+	cursor: pointer;
+	margin-bottom: -1px;
+}
+.sec_recruit .list .btn .icon{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: #ffe12b;
+	border-radius: 50%;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+}
+.sec_recruit .list .btn .icon::before,
+.sec_recruit .list .btn .icon::after{
+	content: '';
+	position: absolute;
+	background: #191919;
+	top: calc(50%);
+	left: calc(50% + 1px);
+	transform: translate(-50%,-50%);
+}
+.sec_recruit .list .btn .icon::before{
+	width: 14px;
+	height: 3px;
+}
+.sec_recruit .list .btn .icon::after{
+	width: 3px;
+	height: 14px;
+}
+.sec_recruit .list .btn.open{
+	border-radius: 5px 5px 0 0;
+	background: #ffe12b;
+	border-color: #ffe12b;
+}
+.sec_recruit .list .btn.open .icon{
+	background: #fff;
+}
+.sec_recruit .list .btn.open .icon::after{
+	opacity: 0;
+}
+.sec_recruit .list .children{
+	border: 2px solid #e9e9e9;
+	border-top: 1px;
+	border-radius: 0 0 5px 5px;
+	display: none;
+}
+.sec_recruit .list .children dl div{
+	padding: 13px;
+	border-top: 1px solid #e9e9e9;
+}
+.sec_recruit .list .children dl dt{
+	font-size: 1.6rem;
+}
+.sec_recruit .list .children dl dd{
+	font-size: 1.4rem;
+	border-top: 1px solid #e9e9e9;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+	.sec_recruit .list li{
+		width: 48.4%;
+		margin-right: 3.2%;
+	}
+	.sec_recruit .list li:nth-child(2n){
+		margin-right: 0;
+	}
+	.sec_recruit .list li:nth-child(n+3){
+		margin-top: 3.2%;
+	}
+}
+@media screen and (max-width: 767px) {
+	.sec_recruit .txt{
+		font-size: 3.7vw;
+		letter-spacing: 0.1em;
+		line-height: 1.57;
+		display: none;
+	}
+	.sec_recruit .list{
+		margin-top: 0;
+	}
+	.sec_recruit .list li+li{
+		margin-top: 3%;
+	}
+	.sec_recruit .list .btn{
+		font-size: 4.5vw;
+		border-radius: 1vw;
+		padding: 3.9% 6%;
+		margin-bottom: -1px;
+	}
+	.sec_recruit .list .btn .icon{
+		width: 6.5vw;
+		height: 6.5vw;
+		right: 10px;
+	}
+	.sec_recruit .list .btn .icon::before{
+		width: 3.5vw;
+		height: .7vw;
+	}
+	.sec_recruit .list .btn .icon::after{
+		width: .7vw;
+		height: 3.5vw;
+	}
+	.sec_recruit .list .btn.open{
+		border-radius: 1vw 1vw 0 0;
+	}
+	.sec_recruit .list .children{
+		border-radius: 0 0 1vw 1vw;
+	}
+	.sec_recruit .list .children dl div{
+		padding: 6%;
+	}
+	.sec_recruit .list .children dl dt{
+		font-size: 4.27vw;
+	}
+	.sec_recruit .list .children dl dd{
+		font-size: 3.7vw;
+		margin-top: 3%;
+		padding-top: 3%;
+	}
+}
+
+/* other
+--------------------------------*/
+.sec_other{
+	border-top: 8px solid #e3e3e3;
+}
+@media screen and (max-width: 767px) {
+	.sec_other{
+		border-top-width: 4px;
+	}
+}
